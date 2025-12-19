@@ -1,5 +1,3 @@
-package controlFlow;
-
 public class CheckSpringSeason{
     public static void main(String[] args){
         if(args.length!=2){

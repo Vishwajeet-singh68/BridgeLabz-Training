@@ -1,4 +1,4 @@
-package controlFlow;
+
 import java.util.Scanner;
 public class PositiveNegativeOrZero {
     public static void main(String[] args) {
