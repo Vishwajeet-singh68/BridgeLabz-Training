@@ -26,27 +26,29 @@ public class CoffeeCounter {
 			}
 			
 			System.out.println("Enter quantity: ");
-			int quantity = in.nextInt();
+			int quantity = in.nextInt(),price;
 			
 			switch(coffeeType) {
 				case 1:
-					double normal=quantity*50;
-					normal+=normal*(18.0/100);
-					System.out.println("Total Cost for the Normal coffee: "+normal);
+					price=quantity*20;
 					break;
 				
 				case 2:
-					double cappuccino=quantity*50;
-					cappuccino+=cappuccino*(18.0/100);
-					System.out.println("Total Cost for the Cappuccino: "+cappuccino);
+					price=quantity*50;
 					break;
 					
 				case 3:
-					double coldCoffee=quantity*50;
-					coldCoffee+=coldCoffee*(18.0/100);
-					System.out.println("Total Cost for the Cold coffee: "+coldCoffee);
+					price=quantity*85;
 					break;
+				default:
+					System.out.println("Invalid Choice. Enter again.");
+					continue;
 			}
+
+			System.out.println("Item Price: RS. "+price);
+			System.out.println("GST (18%): RS. "+(price*0.18));
+			System.out.println("Total Price: RS. "+(price + price*0.18));
+			System.out.println("Enjoy your Coffee!!!\n" );
 		}
 	}
 }
