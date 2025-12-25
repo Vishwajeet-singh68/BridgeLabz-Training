@@ -1,5 +1,3 @@
-// Q3_VehicleTransportSystem.java
-// Demonstrates inheritance, unique subclass attributes, and polymorphism
 
 class Vehicle {
     private int maxSpeed;

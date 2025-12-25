@@ -1,5 +1,3 @@
-// Q9_SchoolSystemRoles.java
-// Demonstrates hierarchical inheritance: Person -> Teacher, Student, Staff
 
 class Person {
     private String name;

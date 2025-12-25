@@ -1,6 +1,3 @@
-// Q8_BankAccountTypes.java
-// Demonstrates hierarchical inheritance: BankAccount -> SavingsAccount, CheckingAccount, FixedDepositAccount
-
 class BankAccount {
     private String accountNumber;
     private double balance;

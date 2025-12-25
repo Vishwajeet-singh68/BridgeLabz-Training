@@ -1,5 +1,3 @@
-// Q6_OnlineRetailOrder.java
-// Demonstrates multilevel inheritance: Order -> ShippedOrder -> DeliveredOrder
 
 import java.time.LocalDate;
 

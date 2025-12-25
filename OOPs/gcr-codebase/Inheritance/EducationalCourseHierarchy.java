@@ -1,5 +1,3 @@
-// Q7_EducationalCourseHierarchy.java
-// Demonstrates multilevel inheritance: Course -> OnlineCourse -> PaidOnlineCourse
 
 class Course {
     private String courseName;

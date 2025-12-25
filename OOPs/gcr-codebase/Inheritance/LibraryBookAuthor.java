@@ -1,5 +1,3 @@
-// Q4_LibraryBookAuthor.java
-// Demonstrates single inheritance with Book as superclass and Author as subclass
 
 class Book {
     private String title;

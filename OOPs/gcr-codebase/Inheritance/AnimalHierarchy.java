@@ -1,6 +1,3 @@
-// Q1_AnimalHierarchy.java
-// Demonstrates basic inheritance, method overriding, and polymorphism
-
 class Animal {
     private String name;
     private int age;

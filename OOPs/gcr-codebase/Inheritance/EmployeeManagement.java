@@ -1,5 +1,3 @@
-// Q2_EmployeeManagement.java
-// Demonstrates inheritance, method overriding, and subclass-specific attributes
 
 class Employee {
     private String name;

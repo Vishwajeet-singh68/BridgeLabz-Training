@@ -1,5 +1,3 @@
-// Q5_SmartHomeDevice.java
-// Demonstrates single inheritance with Device as superclass and Thermostat as subclass
 
 class Device {
     private String deviceId;
