@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Problem1_CheckedException {
+public class CheckedException {
     public static void main(String[] args) {
         try (BufferedReader br = new BufferedReader(new FileReader("data.txt"))) {
             String line;
