@@ -1,23 +1,24 @@
-import org.json.JSONObject;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 
-class User{
-    String name;
-    int age;
-    String email;
-    User(String name, int age, String email){
-        this.name=name;
-        this.age=age;
-        this.email=email;
-    }
-}
 public class JsonObject {
-    public static void main(String[] args) {
-        JSONObject jsonObject=new JSONObject();
+    public static void main(String[] args) throws Exception {
 
-        jsonObject.put("name", "Vishwajeet");
-        jsonObject.put("age", 20);
-        jsonObject.put("email", "vishwajeet@gmail.com");
+        ObjectMapper mapper = new ObjectMapper();
 
-        System.out.println(jsonObject.toString());
+        ObjectNode student = mapper.createObjectNode();
+        student.put("name", "Vishwajeet");
+        student.put("age", 21);
+
+        ArrayNode subjects = mapper.createArrayNode();
+        subjects.add("Math");
+        subjects.add("DSA");
+        subjects.add("Java");
+
+        student.set("subjects", subjects);
+
+        System.out.println(mapper.writerWithDefaultPrettyPrinter()
+                .writeValueAsString(student));
     }
 }
